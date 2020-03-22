@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    tools:context=".Splash">
+
+    <ImageView
+        android:id="@+id/splashLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_launcher_foreground"/>
+    <TextView
+        android:id="@+id/splashAppIntro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COVID-19 Situation Report"
+        android:gravity="center"/>
+</LinearLayout>
