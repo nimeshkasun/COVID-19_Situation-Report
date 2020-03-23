@@ -38,10 +38,10 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
         holder.locHospitalized.setText(listItem.getLocHospitalized());
         holder.locDeaths.setText(listItem.getLocDeaths());
         holder.locRecovered.setText(listItem.getLocRecovered());
-        holder.gloTotalCases.setText(listItem.getGloTotalCases());
+       /* holder.gloTotalCases.setText(listItem.getGloTotalCases());
         holder.gloNewCases.setText(listItem.getGloNewCases());
         holder.gloDeaths.setText(listItem.getGloDeaths());
-        holder.gloRecovered.setText(listItem.getGloRecovered());
+        holder.gloRecovered.setText(listItem.getGloRecovered());*/
     }
 
     @Override
@@ -57,10 +57,10 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
         public TextView locHospitalized;
         public TextView locDeaths;
         public TextView locRecovered;
-        public TextView gloTotalCases;
+        /*public TextView gloTotalCases;
         public TextView gloNewCases;
         public TextView gloDeaths;
-        public TextView gloRecovered;
+        public TextView gloRecovered;*/
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -71,10 +71,10 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
             locHospitalized = (TextView) itemView.findViewById(R.id.locHospitalized);
             locDeaths = (TextView) itemView.findViewById(R.id.locDeaths);
             locRecovered = (TextView) itemView.findViewById(R.id.locRecovered);
-            gloTotalCases = (TextView) itemView.findViewById(R.id.gloTotalCases);
+            /*gloTotalCases = (TextView) itemView.findViewById(R.id.gloTotalCases);
             gloNewCases = (TextView) itemView.findViewById(R.id.gloNewCases);
             gloDeaths = (TextView) itemView.findViewById(R.id.gloDeaths);
-            gloRecovered = (TextView) itemView.findViewById(R.id.gloRecovered);
+            gloRecovered = (TextView) itemView.findViewById(R.id.gloRecovered);*/
         }
     }
 }
