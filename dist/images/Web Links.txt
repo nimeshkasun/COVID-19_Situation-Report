@@ -1,1 +1,1 @@
-GIF: https://ezgif.com/
+GIF: https://ezgif.com/maker  speed:100 crossfade:true
