@@ -3,6 +3,7 @@ package com.nimesh.covid19status;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SwitchCompat;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -35,6 +36,9 @@ import com.android.volley.toolbox.Volley;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
+    SwitchCompat switchCompat;
+    Intent switchIntent;
+
     DrawerLayout drawerLayout;
     Toolbar toolbar;
     NavigationView navigationView;
@@ -52,6 +56,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        switchCompat = findViewById(R.id.switchButton);
+        switchIntent = new Intent(this, MainActivityGlobe.class);
+
+        switchCompat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(switchCompat.isChecked()){
+                    overridePendingTransition(0, 0);
+                    startActivity(switchIntent);
+                    overridePendingTransition(0, 0);
+                }else {
+                    recreate();
+                }
+            }
+        });
+
 
         drawerLayout = findViewById(R.id.drawer);
         toolbar = findViewById(R.id.toolbar);
@@ -113,6 +134,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         startActivity(viewIntent);
     }
 
+    public void updateApp(View view){
+        Intent viewIntent =
+                new Intent("android.intent.action.VIEW",
+                        Uri.parse("https://nimeshkasun.github.io/COVID-19_Situation-Report/"));
+        startActivity(viewIntent);
+    }
+
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -147,11 +175,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                             array.getString("local_new_cases"),
                             array.getString("local_total_number_of_individuals_in_hospitals"),
                             array.getString("local_deaths"),
-                            array.getString("local_recovered"),
-                            array.getString("global_total_cases"),
+                            array.getString("local_recovered")
+                            /*array.getString("global_total_cases"),
                             array.getString("global_new_cases"),
                             array.getString("global_deaths"),
-                            array.getString("global_recovered")
+                            array.getString("global_recovered")*/
                     );
                     listItems.add(item);
                     //}

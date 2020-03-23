@@ -1062,6 +1062,8 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable button_rounded
+drawable button_rounded_green
+drawable button_rounded_red
 drawable covid19logo
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
@@ -1093,6 +1095,8 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable sw_thumb
+drawable sw_track
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -1235,6 +1239,7 @@ id kduLogo
 id labeled
 id largeLabel
 id lastUpdated
+id lastUpdatedText
 id left
 id line1
 id line3
@@ -1323,6 +1328,7 @@ id start
 id stretch
 id submenuarrow
 id submit_area
+id switchButton
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -1358,6 +1364,7 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id updateApp
 id useLogo
 id vertical
 id view_offset_helper
@@ -1438,6 +1445,7 @@ layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout header
 layout list_item
+layout list_item_globe
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
