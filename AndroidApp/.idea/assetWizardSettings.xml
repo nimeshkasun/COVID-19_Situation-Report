@@ -133,8 +133,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_covid19whitelogo" />
-                            <entry key="sourceFile" value="C:\Users\OmegaBlade\Desktop\covid19whitelogo.svg" />
+                            <entry key="outputName" value="ic_covid_19_logo" />
+                            <entry key="sourceFile" value="C:\Users\OmegaBlade\Documents\AndroidStudio\Navigation_Drawer-master\app\src\main\res\drawable\COVID-19_logo.svg" />
                           </map>
                         </option>
                       </PersistentState>

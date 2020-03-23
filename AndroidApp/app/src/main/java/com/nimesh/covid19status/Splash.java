@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Splash extends AppCompatActivity {
-    private TextView tv,tv2,tv3;
+    private TextView tv;
     private ImageView iv;
 
     @Override
@@ -20,19 +20,15 @@ public class Splash extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         tv = (TextView) findViewById(R.id.splashAppIntro);
-        tv2 = (TextView) findViewById(R.id.splashAppIntro2);
-        tv3 = (TextView) findViewById(R.id.devBy);
         iv = (ImageView) findViewById(R.id.splashLogo);
         Animation splashAnim = AnimationUtils.loadAnimation(this,R.anim.splashtransition);
         tv.startAnimation(splashAnim);
-        tv2.startAnimation(splashAnim);
-        tv3.startAnimation(splashAnim);
         iv.startAnimation(splashAnim);
         final Intent in = new Intent(this, MainActivity.class);
         Thread timer = new Thread(){
             public void run(){
                 try {
-                    sleep(3000);
+                    sleep(2000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }finally {
