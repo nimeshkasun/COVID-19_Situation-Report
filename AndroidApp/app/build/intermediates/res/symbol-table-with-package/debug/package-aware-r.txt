@@ -1072,7 +1072,6 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable hpb
-drawable ic_covid19whitelogo
 drawable ic_covid_19_logo
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1196,7 +1195,6 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
-id devBy
 id dialog_button
 id dimensions
 id direct
@@ -1318,7 +1316,6 @@ id snap
 id snapMargins
 id spacer
 id splashAppIntro
-id splashAppIntro2
 id splashLogo
 id split_action_bar
 id spread
