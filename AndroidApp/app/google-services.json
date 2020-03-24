@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "87496822874",
+    "firebase_url": "https://covid19status-99431.firebaseio.com",
+    "project_id": "covid19status-99431",
+    "storage_bucket": "covid19status-99431.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87496822874:android:de1d3d7f62c37b4d024863",
+        "android_client_info": {
+          "package_name": "com.nimesh.covid19"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87496822874-f1tolvu6cimjg304k7olvgufipf7drsj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nimesh.covid19",
+            "certificate_hash": "4c6e05bdc46c59b390a9ce8d165eeb1ca18c5fa0"
+          }
+        },
+        {
+          "client_id": "87496822874-hc1k92g6ianqhceqm3hmbthgdi33t74b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDy4P_7ZAJpWl_qRGAp0vUGoeXVvrbkOnc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87496822874-hc1k92g6ianqhceqm3hmbthgdi33t74b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
