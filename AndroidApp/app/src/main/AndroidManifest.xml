@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.nimesh.covid19status">
+    package="com.nimesh.covid19">
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <permission android:name="com.name.name.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.name.name.permission.C2D_MESSAGE" />
 
     <application
         android:allowBackup="true"
@@ -10,15 +13,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.nimesh.covid19status.Splash">
+        <activity android:name="com.nimesh.covid19.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".MainActivityGlobe"></activity>
+        <activity android:name="com.nimesh.covid19.MainActivity"></activity>
+        <activity android:name="com.nimesh.covid19.MainActivityGlobe"></activity>
+        <service android:name=".Service.MyFirebaseInstanceService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
